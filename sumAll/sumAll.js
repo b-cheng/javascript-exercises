@@ -9,12 +9,12 @@ const sumAll = function(first, last) {
 			finalSum+=i
 		}
 		return finalSum
-	} else if (first > last){
+	} else if (first > last) {
 		//something to figure out how to reverse this
-		var finalSum=0;
+		var fakeFirst = first;
 		first=last;
-		last=first;
-		for (var i=last; i <= first; i++) {
+		last=fakeFirst;
+		for (var i=first; i <= last; i++) {
 			finalSum+=i
 		}
 		return finalSum
