@@ -1,7 +1,7 @@
 const sumAll = function(first, last) {
-	if ((first < 0) || (!first.typeOf === 'number')) {
+	if ((first < 0) || (last < 0)) {
 		return 'ERROR'
-	} else if ((last < 0) || (!last.typeOf === 'number')) {
+	} else if ( typeof first !== "number" || typeof last !== "number") {
 		return 'ERROR'
 	} else if (first < last) {
 		var finalSum=0
