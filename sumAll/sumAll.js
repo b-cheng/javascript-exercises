@@ -9,8 +9,15 @@ const sumAll = function(first, last) {
 			finalSum+=i
 		}
 		return finalSum
-	} else {
+	} else if (first > last){
 		//something to figure out how to reverse this
+		var finalSum=0;
+		first=last;
+		last=first;
+		for (var i=last; i <= first; i++) {
+			finalSum+=i
+		}
+		return finalSum
 	}
 }
 
