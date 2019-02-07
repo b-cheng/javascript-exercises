@@ -3,12 +3,14 @@ const sumAll = function(first, last) {
 		return 'ERROR'
 	} else if ((last < 0) || (!last.typeOf === 'number')) {
 		return 'ERROR'
-	} else {
+	} else if (first < last) {
 		var finalSum=0
 		for (var i=first; i <= last; i++) {
 			finalSum+=i
 		}
 		return finalSum
+	} else {
+		//something to figure out how to reverse this
 	}
 }
 
