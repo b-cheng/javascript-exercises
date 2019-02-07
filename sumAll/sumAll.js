@@ -11,9 +11,10 @@ const sumAll = function(first, last) {
 		return finalSum
 	} else if (first > last) {
 		//something to figure out how to reverse this
-		var fakeFirst = first;
-		first=last;
-		last=fakeFirst;
+		var finalSum=0
+		var fakeFirst = first
+		first=last
+		last=fakeFirst
 		for (var i=first; i <= last; i++) {
 			finalSum+=i
 		}
